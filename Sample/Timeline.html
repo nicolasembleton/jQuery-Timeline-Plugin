@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title></title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="jquery.timeline.js"></script>
+        <link href="jquery.timeline.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+        <!-- minimum markup -->
+        <div id="timeline_container">
+            <div id="timeline">
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <!-- end jquery timline minimum markup -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#timeline_container").timeline({
+                left_symbol:"+",
+                left_action:"",                                     // Needs to be a URL or a Hash
+                right_symbol: "-",
+                right_action: "",                                   // Needs to be a URL or a Hash
+                use_alternative_position: false,                    // Use odds and even positioning for labels ( bottom and top )
+                link_is_hash: false,                                 // If the link is a hash, it will update the location.hash, otherwise open a new window
+                normal_color: "#58595b",                            // Overwrites the normal color
+                hover_color: "#ed145b",                             // Overwrites the hovered color
+                auto_detect_active_bullet: true,
+                times: [
+                    { text: "2011", type: "separator" },
+                    { link: "#open-me", text: "05"},
+                    { link: "#2", text: "06"},
+                    { link: "#4", text: "08" },
+                    { link: "#5", text: "12" },
+                    { text: "2012", type: "separator" },
+                    { link: "#6", text: "01" },
+                    { link: "#7", text: "03" },
+                    { link: "#8", text: "05" },
+                    { link: "#9", text: "06" },
+                    { link: "#10", text: "07" },
+                    { link: "#11", text: "08" },
+                    { link: "#12", text: "09" },
+                    { link: "#13", text: "10" },
+                    { link: "http://localhost/~nembleton/Timeline2/Timeline.html", text: "12" },
+                    { text: "2013", type: "separator" }
+                ]
+            });
+        });
+    </script>
+
+	</body>
+</html>

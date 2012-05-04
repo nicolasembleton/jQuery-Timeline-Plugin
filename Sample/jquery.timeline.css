@@ -1,0 +1,149 @@
+
+.color_hover { color: #ed145b; }
+.color_normal { color: #58595B; }
+.invisible { display:none; }
+.selected {}
+span.selected { color: #ed145b !important; }
+a.selected { background-color:#ed145b !important; }
+.odd_row {}
+span.odd_row { margin-top:-36px !important; }
+
+/** To make the timeline responsive: */
+#timeline_container {
+    width: 800px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+/** Serves as a container */
+#timeline {
+    width: 100%;
+    height: 100%;
+    display:inline-table;
+    max-height: 150px;
+    min-height: 50px;
+    padding: 21px 10px;
+    border: 1px solid red;
+    margin: 0;
+}
+
+#timeline ul {
+    width:100%;
+    height:100%;
+    display:inline-table;
+    border: 1px solid blue;
+    margin: 0;
+    padding:30px 15px 0;
+    list-style: none;
+}
+
+#timeline ul li {
+    float: left;
+    background:url('images/timeline_line.png') 0 -4px repeat-x;
+    width: 10px;
+}
+
+#timeline ul li.separator {
+    float: left;
+    width:1px;
+    border-left: black 1px solid;
+    display:inline-block;
+    margin-left: 25px;
+}
+
+#timeline ul li.separator span {
+    margin-top:-40px;
+    margin-left: 0px;
+    text-align: left;
+}
+
+#timeline ul li.empty {
+    float: left;
+    width:50px;
+    display:inline-block;
+    background:url('images/timeline_line.png') -10px repeat-x;
+}
+
+/** Last element in the timeline has to be only 1/2 the normal size
+to shift from the first being directly stick with a bullet */
+#timeline ul li.empty_last {
+    float: left;
+    width:25px;
+    display:inline-block;
+    background:url('images/timeline_line.png') -10px repeat-x;
+}
+
+/** Sorry, but + and - are not "exactly" similar so I just duplicated them both */
+#timeline ul li#plus {
+    width: 31px;
+}
+
+#timeline ul li#plus a {
+    width: 18px;
+    height: 18px;
+    background-color: #58595b;
+    color: white;
+    padding: 3px 3px 10px 10px;
+    display:inline-block;
+    margin-top: -7px;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#timeline ul li#minus {
+    width:30px;
+}
+
+#timeline ul li#minus a {
+    width: 18px;
+    height: 18px;
+    background-color: #58595b;
+    color: white;
+    padding: 2px 0px 10px 13px;
+    display:inline-block;
+    margin-top: -7px;
+    border-radius: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#timeline ul li a {
+    width:10px;
+    height:10px;
+    text-decoration: none;
+    background-color: #58595b;
+    display:inline-block;
+    float:left;
+    margin-top:4px;
+    border-radius: 10px;
+
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    -ms-transition: background 0.2s ease;
+    -o-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+}
+
+#timeline ul li span {
+    margin-top: 12px;
+    margin-left: -20px;
+    float: left;
+    font-family: arial,sans-serif;
+    font-weight: 100;
+    font-size: 0.75em;
+    width: 50px;
+    text-align: center;
+    color: #58595b;
+
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+/** Hover Color */
+#timeline ul li a#plus:hover, #timeline ul li a#minus:hover, #timeline ul li a:hover {
+    background-color: #ed145b;
+}

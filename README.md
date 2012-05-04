@@ -18,8 +18,10 @@ A few CSS 3 transitions are enabled for color fading.
 
 ## Screenshots 
 
+Alternate position ( use_alternative_position: true )
 ![A small screenshot of the alternate way](https://github.com/nicolasembleton/jQuery-Timeline-Plugin/raw/master/Screenshots/jquery.timeline.js.alternate.png)
 
+Straight position ( use_alternative_position: false )
 ![A small screenshot of the plain way](https://github.com/nicolasembleton/jQuery-Timeline-Plugin/raw/master/Screenshots/jquery.timeline.js.plain.png)
 
 ## Setup
@@ -84,3 +86,14 @@ Remember to include the scripts in the header:
 
 Copyright (c) 2012 Nicolas Embleton
 Licensed under the [MIT license](https://github.com/nicolasembleton/jQuery-Timeline-Plugin/blob/master/MIT-license.txt)
+
+## Changelog
+
+### 1.1
+
+- Better detector of currently active bullet ( Todo 4 ). Might cause problems in some cases.
+  You can disable it by initializing with auto_detect_active_bullet:false
+
+### 1.0
+
+- Initial release. Stable. Tested with most browsers on Mac OS X
