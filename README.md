@@ -18,9 +18,9 @@ A few CSS 3 transitions are enabled for color fading.
 
 ## Screenshots 
 
-![A small screenshot of the alternate way](https://github.com/nicolasembleton/jQuery-Timeline-Plugin/blob/master/Screenshots/jquery.timeline.js.alternate.png)
+![A small screenshot of the alternate way](https://github.com/nicolasembleton/jQuery-Timeline-Plugin/raw/master/Screenshots/jquery.timeline.js.alternate.png)
 
-![A small screenshot of the plain way](https://github.com/nicolasembleton/jQuery-Timeline-Plugin/blob/master/Screenshots/jquery.timeline.js.alternate.png)
+![A small screenshot of the plain way](https://github.com/nicolasembleton/jQuery-Timeline-Plugin/raw/master/Screenshots/jquery.timeline.js.plain.png)
 
 ## Setup
 
@@ -49,6 +49,7 @@ And you then activate the plugin using the following options ( full set, most of
                 link_is_hash: true,                                 // If the link is a hash, it will update the location.hash, otherwise open a new window
                 normal_color: "#58595b",                            // Overwrites the normal color
                 hover_color: "#ed145b",                             // Overwrites the hovered color
+                auto_detect_active_bullet: true,		            // If set to true, will parse the current link or hash ( depending on the type ) to match
                 times: [
                     { text: "2011", type: "separator" },            // Will generate a separator
                     { link: "#open-me", text: "05"},
