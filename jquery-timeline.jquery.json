@@ -1,0 +1,32 @@
+{
+    "name": "jQuery-Timeline",
+    "version": "1.0.1",
+    "title": "jQuery().timeline()",
+    "author": {
+        "name": "Nicolas Embleton",
+        "url": "https://github.com/nicolasembleton"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/nicolasembleton/jQuery-Timeline-Plugin/blob/master/MIT-license.txt"
+        }
+    ],
+    "dependencies": {
+        "jquery": ">=1.6"
+    },
+    "description": "jQuery Timeline Plugin is a tiny jQuery plugin to output a nice looking timeline that can be used for navigation, archive, or playing around with Hash Changes ( it's hash change compatible ), or anything you can think of.",
+    "keywords": [
+        "timeline",
+        "navigation",
+        "hash",
+        "url"
+    ],
+    "homepage": "https://github.com/nicolasembleton/jQuery-Timeline-Plugin",
+    "maintainers": [
+        {
+            "name": "Nicolas Embleton",
+            "url": "https://github.com/nicolasembleton"
+        }
+    ]
+}
